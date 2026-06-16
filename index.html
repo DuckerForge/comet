@@ -19,6 +19,16 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Shared gradient for inline icons -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="ig" x1="0" y1="1" x2="1" y2="0">
+        <stop stop-color="#00E0FF" />
+        <stop offset="1" stop-color="#9945FF" />
+      </linearGradient>
+    </defs>
+  </svg>
+
   <!-- Animated background orbs -->
   <div class="bg-orbs" aria-hidden="true">
     <span class="orb orb--cyan"></span>
@@ -44,7 +54,7 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero__copy">
-        <span class="pill">☄ Built for Solana Seeker</span>
+        <span class="pill"><svg class="ico-inline" viewBox="0 0 24 24" aria-hidden="true"><circle cx="15.5" cy="8.5" r="4.2" fill="url(#ig)"/><path d="M12.4 11.6 4 20l5.2-6.7z" fill="url(#ig)" opacity="0.5"/></svg>Built for Solana Seeker</span>
         <h1 class="hero__title">
           Swap cross-chain,<br /><span class="gradient-text">light-years faster.</span>
         </h1>
@@ -70,7 +80,7 @@
           <div class="phone__notch"></div>
           <div class="phone__screen">
             <div class="app__top">
-              <span class="app__logo">☄ Comet</span>
+              <span class="app__logo"><svg class="ico-inline" viewBox="0 0 24 24" aria-hidden="true"><circle cx="15.5" cy="8.5" r="4.2" fill="url(#ig)"/><path d="M12.4 11.6 4 20l5.2-6.7z" fill="url(#ig)" opacity="0.5"/></svg>Comet</span>
               <span class="app__dot"></span>
             </div>
             <p class="app__label">You pay</p>
@@ -116,32 +126,32 @@
       </div>
       <div class="grid">
         <article class="card reveal">
-          <div class="card__ico">🌐</div>
+          <div class="card__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="url(#ig)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="6.5" r="2.3"/><circle cx="19" cy="6.5" r="2.3"/><circle cx="12" cy="18" r="2.5"/><path d="M6.7 8.4 10.6 15.9"/><path d="M17.3 8.4 13.4 15.9"/><path d="M7.2 6.5h9.6"/></svg></div>
           <h3>Truly multichain</h3>
           <p>Swap and bridge across 200+ blockchains — Solana, Ethereum, L2s and beyond — from a single screen.</p>
         </article>
         <article class="card reveal">
-          <div class="card__ico">⚡</div>
+          <div class="card__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="url(#ig)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2.5 5.5 13H11l-1 8.5L18.5 10.5H12z"/></svg></div>
           <h3>Best rates, always</h3>
           <p>An aggregator routes every trade across 450+ DEXs and CEXs to find the deepest liquidity and lowest slippage.</p>
         </article>
         <article class="card reveal">
-          <div class="card__ico">🔐</div>
+          <div class="card__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="url(#ig)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5 19.5 5.3V11c0 5-3.4 8.4-7.5 10.3C7.9 19.4 4.5 16 4.5 11V5.3z"/><circle cx="12" cy="10.3" r="1.7"/><path d="M12 12v3"/></svg></div>
           <h3>Seed Vault security</h3>
           <p>Every transaction is signed on-device by the Seeker's hardware Seed Vault. Your keys never leave the phone.</p>
         </article>
         <article class="card reveal">
-          <div class="card__ico">🛡️</div>
+          <div class="card__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="url(#ig)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="3.6"/><path d="M10.6 10.6 20 20"/><path d="M17.5 17.5 19.4 15.6"/><path d="M14.8 14.8 16.7 12.9"/></svg></div>
           <h3>Non-custodial</h3>
           <p>Comet never holds your funds. You swap directly from your own wallet — no deposits, no accounts.</p>
         </article>
         <article class="card reveal">
-          <div class="card__ico">◎</div>
+          <div class="card__ico"><svg class="ico" viewBox="0 0 24 24" fill="url(#ig)" aria-hidden="true"><path d="M5 6h12l-2 2H3z"/><path d="M3 11h12l2 2H5z"/><path d="M5 16h12l-2 2H3z"/></svg></div>
           <h3>Solana-first</h3>
           <p>Designed around Solana: fast settlement, low fees, and a flow that feels native to the Seeker.</p>
         </article>
         <article class="card reveal">
-          <div class="card__ico">📈</div>
+          <div class="card__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="url(#ig)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16"/><path d="M7 20v-5"/><path d="M12 20V8"/><path d="M17 20v-9"/></svg></div>
           <h3>Transparent fees</h3>
           <p>The exact fee is shown before you confirm. No hidden spread, no surprises after the swap.</p>
         </article>
@@ -210,7 +220,8 @@
     </div>
     <p class="footer__tag">Cross-chain swaps for Solana Seeker. Powered by RocketX.</p>
     <nav class="footer__links">
-      <a href="privacy.html">Privacy</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
       <a href="mailto:cismytb@gmail.com">Contact</a>
     </nav>
     <small class="footer__copy">© <span id="year">2026</span> Comet. Not affiliated with Solana Foundation or RocketX.</small>
